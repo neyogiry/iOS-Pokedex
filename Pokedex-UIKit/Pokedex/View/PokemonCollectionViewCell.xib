@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pokemonCell" id="gTV-IL-0wX" customClass="PokemonCollectionViewCell" customModule="Pokedex" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="400"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hsn-ob-9Pu">
+                        <rect key="frame" x="91" y="16.5" width="150" height="149"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="65U-3i-gNy"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="KvX-Mt-MLf"/>
+                            <constraint firstAttribute="width" secondItem="hsn-ob-9Pu" secondAttribute="height" multiplier="1:1" id="rX3-2a-8lI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekP-CL-3Xp">
+                        <rect key="frame" x="16" y="182" width="300" height="202"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ekP-CL-3Xp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="4ds-DC-QFB"/>
+                <constraint firstItem="hsn-ob-9Pu" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="BIG-AU-7RV"/>
+                <constraint firstAttribute="bottom" secondItem="ekP-CL-3Xp" secondAttribute="bottom" constant="16" id="T4U-p8-NeA"/>
+                <constraint firstItem="hsn-ob-9Pu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="bN3-ln-swX"/>
+                <constraint firstItem="ekP-CL-3Xp" firstAttribute="top" secondItem="hsn-ob-9Pu" secondAttribute="bottom" constant="16" id="eJ2-bd-sbD"/>
+                <constraint firstItem="hsn-ob-9Pu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="luz-xD-VmW"/>
+                <constraint firstAttribute="trailing" secondItem="ekP-CL-3Xp" secondAttribute="trailing" constant="16" id="oRZ-6W-gds"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hsn-ob-9Pu" secondAttribute="trailing" constant="16" id="t1p-co-4LY"/>
+            </constraints>
+            <size key="customSize" width="400" height="400"/>
+            <connections>
+                <outlet property="pokemonImage" destination="hsn-ob-9Pu" id="iPV-UM-DhO"/>
+                <outlet property="pokemonName" destination="ekP-CL-3Xp" id="upK-xd-BIL"/>
+            </connections>
+            <point key="canvasLocation" x="385.50724637681162" y="249.10714285714283"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
