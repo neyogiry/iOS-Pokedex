@@ -95,6 +95,7 @@ struct PokemonDetailView: View {
             }
         }
         .background(Color.teal)
+        .toolbar(.hidden)
         .task {
             do {
                 try await viewModel.fetchPokemonDetail(from: pokemon.url)
