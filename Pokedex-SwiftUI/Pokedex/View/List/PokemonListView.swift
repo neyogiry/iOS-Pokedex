@@ -26,6 +26,7 @@ struct PokemonListView: View {
                                 PokemonItemView(pokemon: pokemon)
                             }
                         )
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
                 .padding(10)
