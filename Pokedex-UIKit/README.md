@@ -6,6 +6,10 @@
 
 Welcome to the Pokedex App! This iOS application is your ultimate companion for exploring the fascinating world of Pokémon. Built using UIKit and following the MVC design pattern, this app allows users to browse and search for Pokémon, view detailed stats, and explore various types and abilities.
 
+<p align="center">
+<img src="/Pokedex-UIKit/readme/pokemon_list.png" width="320"/>
+</p>
+
 ## Requirements
 Xcode: 13.4.1+ <br>
 iOS Deployment Target: 14.5+ <br>
@@ -22,7 +26,7 @@ These sample Pokedex apps use [PokeAPI](https://pokeapi.co/).<br>
 This is a full RESTful API linked to an extensive database detailing everything about the Pokémon main game series.
 
 ## Find this repository useful? ♥️
-Support it by joining __[neyogiry](https://github.com/neyogiry/Pokedex-Android/stargazers)__ for this repository. 🌟 <br>
+Support it by joining __[neyogiry](https://github.com/neyogiry/iOS-Pokedex/stargazers)__ for this repository. 🌟 <br>
 Also, __[follow me](https://github.com/neyogiry)__ on GitHub for more content! 👨‍💻
 
 # License
