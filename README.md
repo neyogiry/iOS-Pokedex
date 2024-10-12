@@ -6,6 +6,9 @@
 
 Pokedex iOS is a mobile application for iOS that serves as a sample project for developers looking to learn how to build iOS applications using the latest technologies and best practices. The app allows you to explore the Pokémon universe, searching for and viewing detailed information about each creature, including their stats and abilities.
 
+> [!TIP]
+> If you want to see the application for Android, check out the [Android-Pokedex](https://github.com/neyogiry/Android-Pokedex) repository.
+
 <p align="center">
 <img src="/Pokedex-SwiftUI/readme/pokemon_list.png" width="320"/>
 &nbsp; &nbsp; &nbsp;
