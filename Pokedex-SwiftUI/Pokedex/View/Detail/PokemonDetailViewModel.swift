@@ -10,17 +10,17 @@ import Foundation
 @Observable
 final class PokemonDetailViewModel {
     
-    private let repository: PokedexRepositoryProtocol
+    private let getPokemonDetailUseCase: GetPokemonDetailUseCase
     
     var pokemonDetail: PokemonDetail?
     
-    init(repository: PokedexRepositoryProtocol = PokedexRepository(dataSource: RemoteDataSource())) {
-        self.repository = repository
+    init(getPokemonDetailUseCase: GetPokemonDetailUseCase = GetPokemonDetailUseCase(PokedexRepository.shared)) {
+        self.getPokemonDetailUseCase = getPokemonDetailUseCase
     }
     
     func fetchPokemonDetail(from url: String) async throws {
         do {
-            pokemonDetail = try await repository.detail(from: url)
+            pokemonDetail = try await getPokemonDetailUseCase.execute(from: url)
         } catch {
             print(error)
         }

@@ -13,6 +13,9 @@
 		1EB72D302C8C9283005EBE44 /* PokemonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB72D2F2C8C9283005EBE44 /* PokemonDetailViewModel.swift */; };
 		1EB72D322C8CA706005EBE44 /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB72D312C8CA706005EBE44 /* ImageUtil.swift */; };
 		1EB958B82CBC6BEB0003D61A /* PokedexDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB958B72CBC6BEB0003D61A /* PokedexDataSource.swift */; };
+		1EB958BD2CBC94410003D61A /* GetPokemonListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB958BC2CBC94410003D61A /* GetPokemonListUseCase.swift */; };
+		1EB958BF2CBC97740003D61A /* GetImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB958BE2CBC97740003D61A /* GetImageUseCase.swift */; };
+		1EB958C12CBC9DFE0003D61A /* GetPokemonDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB958C02CBC9DFE0003D61A /* GetPokemonDetailUseCase.swift */; };
 		1EBBD9302C76EB8200515D3B /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBD92F2C76EB8200515D3B /* UIImageExtension.swift */; };
 		1EC45E25281C557C0094A9CD /* PokedexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC45E24281C557C0094A9CD /* PokedexApp.swift */; };
 		1EC45E27281C557C0094A9CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC45E26281C557C0094A9CD /* ContentView.swift */; };
@@ -35,6 +38,9 @@
 		1EB72D2F2C8C9283005EBE44 /* PokemonDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewModel.swift; sourceTree = "<group>"; };
 		1EB72D312C8CA706005EBE44 /* ImageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtil.swift; sourceTree = "<group>"; };
 		1EB958B72CBC6BEB0003D61A /* PokedexDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexDataSource.swift; sourceTree = "<group>"; };
+		1EB958BC2CBC94410003D61A /* GetPokemonListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPokemonListUseCase.swift; sourceTree = "<group>"; };
+		1EB958BE2CBC97740003D61A /* GetImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageUseCase.swift; sourceTree = "<group>"; };
+		1EB958C02CBC9DFE0003D61A /* GetPokemonDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPokemonDetailUseCase.swift; sourceTree = "<group>"; };
 		1EBBD92F2C76EB8200515D3B /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		1EC45E21281C557C0094A9CD /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC45E24281C557C0094A9CD /* PokedexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexApp.swift; sourceTree = "<group>"; };
@@ -84,6 +90,9 @@
 		1EB958BA2CBC6FBB0003D61A /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				1EB958BC2CBC94410003D61A /* GetPokemonListUseCase.swift */,
+				1EB958BE2CBC97740003D61A /* GetImageUseCase.swift */,
+				1EB958C02CBC9DFE0003D61A /* GetPokemonDetailUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -264,7 +273,10 @@
 				E4E5B1482B3E6BE100A34107 /* PokedexRepository.swift in Sources */,
 				1E2CDD602CA23A8F00BCF1C2 /* Extensions.swift in Sources */,
 				E49746C429481CA300197A33 /* PokemonItemView.swift in Sources */,
+				1EB958BD2CBC94410003D61A /* GetPokemonListUseCase.swift in Sources */,
 				1EB958B82CBC6BEB0003D61A /* PokedexDataSource.swift in Sources */,
+				1EB958BF2CBC97740003D61A /* GetImageUseCase.swift in Sources */,
+				1EB958C12CBC9DFE0003D61A /* GetPokemonDetailUseCase.swift in Sources */,
 				1EB72D322C8CA706005EBE44 /* ImageUtil.swift in Sources */,
 				E4E5B1452B3E6B4900A34107 /* PokedexRepositoryProtocol.swift in Sources */,
 				E4A02FE42BBF832F00E91031 /* PokemonListViewModel.swift in Sources */,

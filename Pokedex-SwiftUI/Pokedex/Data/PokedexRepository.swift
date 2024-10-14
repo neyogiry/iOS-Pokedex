@@ -8,10 +8,11 @@
 import Foundation
 
 struct PokedexRepository: PokedexRepositoryProtocol {
+    static let shared = PokedexRepository()
     
     private let dataSource: PokedexDataSource
     
-    init(dataSource: PokedexDataSource) {
+    init(dataSource: PokedexDataSource = RemoteDataSource()) {
         self.dataSource = dataSource
     }
     

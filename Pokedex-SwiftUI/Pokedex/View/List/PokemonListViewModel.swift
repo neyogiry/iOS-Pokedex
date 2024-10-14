@@ -10,24 +10,26 @@ import Foundation
 @Observable
 final class PokemonListViewModel {
     
-    private let repository: PokedexRepositoryProtocol
+    private let getPokemonListUseCase: GetPokemonListUseCase
+    private let getImageUseCase: GetImageUseCase
     
     var pokedex: [Pokemon] = []
     
-    init(repository: PokedexRepositoryProtocol = PokedexRepository(dataSource: RemoteDataSource())) {
-        self.repository = repository
+    init(getPokemonListUseCase: GetPokemonListUseCase = GetPokemonListUseCase(PokedexRepository.shared), getImageUseCase: GetImageUseCase = GetImageUseCase(PokedexRepository.shared)) {
+        self.getPokemonListUseCase = getPokemonListUseCase
+        self.getImageUseCase = getImageUseCase
     }
     
     func fetchPokedex() async throws {
         do {
-            pokedex = try await repository.all().results
+            pokedex = try await getPokemonListUseCase.execute()
         } catch {
             print(error)
         }
     }
     
     func fetchImage(from url: String) async throws -> Data {
-        return try await repository.fetchImage(from: url)
+        return try await getImageUseCase.execute(from: url)
     }
     
 }
