@@ -1,5 +1,5 @@
 //
-//  PokemonRepository.swift
+//  PokedexDataSource.swift
 //  Pokedex
 //
 //  Created by neyogiry on 28/12/23.
@@ -7,9 +7,13 @@
 
 import Foundation
 
-struct PokemonRepository: PokemonDataSource {
-    
-    static let shared = PokemonRepository()
+protocol PokedexDataSource {
+    func all() async throws -> Pokedex
+    func fetchImage(from url: String) async throws -> Data
+    func detail(from url: String) async throws -> PokemonDetail
+}
+
+struct RemoteDataSource : PokedexDataSource {
     
     func all() async throws -> Pokedex {
         guard let url = URL(string: "https://pokeapi.co/api/v2/pokemon") else {
