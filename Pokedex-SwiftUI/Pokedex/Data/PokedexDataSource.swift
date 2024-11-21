@@ -7,13 +7,7 @@
 
 import Foundation
 
-protocol PokedexDataSource {
-    func all() async throws -> Pokedex
-    func fetchImage(from url: String) async throws -> Data
-    func detail(from url: String) async throws -> PokemonDetail
-}
-
-struct RemoteDataSource : PokedexDataSource {
+struct RemoteDataSource : DataSourceProtocol {
     
     func all() async throws -> Pokedex {
         guard let url = URL(string: "https://pokeapi.co/api/v2/pokemon") else {
