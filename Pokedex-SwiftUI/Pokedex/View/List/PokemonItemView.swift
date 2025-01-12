@@ -25,7 +25,7 @@ struct PokemonItemView: View {
                     .resizable()
                     .scaledToFit()
             }
-            Text(pokemon.name)
+            Text(pokemon.name.capitalized)
         }
         .padding(.all, 16)
         .background(backgroundColor)

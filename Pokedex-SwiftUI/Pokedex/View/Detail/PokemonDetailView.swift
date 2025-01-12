@@ -51,7 +51,7 @@ struct PokemonDetailView: View {
                             },
                             placeholder: {}
                         )
-                        Text(pokemon.name).font(.title)
+                        Text(pokemon.name.capitalized).font(.title)
                         
                         HStack {
                             if let weight = viewModel.pokemonDetail?.weight {
